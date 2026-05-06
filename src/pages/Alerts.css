@@ -1,0 +1,120 @@
+.alerts-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.alerts-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.alerts-list {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.alert-card.unread {
+  border-left: 4px solid var(--accent-pink);
+  background: rgba(255, 0, 85, 0.05);
+}
+
+.alert-card.read {
+  opacity: 0.7;
+  border-left: 4px solid var(--text-secondary);
+}
+
+.alert-body {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.alert-icon.warning {
+  color: var(--accent-pink);
+  filter: drop-shadow(var(--glow-pink));
+}
+
+.alert-icon.info {
+  color: var(--accent-cyan);
+  filter: drop-shadow(var(--glow-cyan));
+}
+
+.alert-message {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.alert-status {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.action-btn {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dismiss-btn {
+  color: var(--accent-cyan);
+}
+
+.dismiss-btn:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+  box-shadow: var(--glow-cyan);
+}
+
+.delete-btn {
+  color: var(--text-secondary);
+}
+
+.delete-btn:hover {
+  background: rgba(255, 0, 0, 0.2);
+  color: #ff4444;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.success-icon {
+  color: var(--accent-cyan);
+  margin-bottom: 20px;
+  filter: drop-shadow(var(--glow-cyan));
+}
+
+.empty-state h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
