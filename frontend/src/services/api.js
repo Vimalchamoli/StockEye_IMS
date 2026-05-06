@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://stockeye-ims.onrender.com",
+  baseURL: "https://stockeye-ims.onrender.com/api",
 });
 
 // attach token automatically
